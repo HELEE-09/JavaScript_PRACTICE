@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function pru()
+        {
+            var n1=parseInt(document.getElementById("n1").value);
+            var n2=parseInt(document.getElementById("n2").value);
+            var multiplication=n1*n2;
+            var sum=n1+n2;
+            var division=n1%n2;
+            var subtraction=n1-n2;
+            document.getElementById("demo").innerHTML="multiplication of both values is"+multiplication;
+            document.getElementById("demo1").innerHTML="sum of both values is"+sum;
+            document.getElementById("demo2").innerHTML="division of both values is"+division;
+            document.getElementById("demo3").innerHTML="subtraction of both values is"+subtraction;
+        }
+    </script>
+</head>
+<body bgcolor="pink">
+    <form method=post action="" onsubmit="pru(); return false">
+        <p>ENTER FIRST VALUE</p>
+        <input type="text" name="n1" id="n1">
+        <p>ENTER SECOND VALUE</p>
+        <input type="text" name="n2" id="n2">
+        <p></p>
+        <input type="submit" name="submit" value="result">
+        <p></p>
+        <p id="demo" style="color:blueviolet"></p>
+        <p id="demo1" style="color:blue"></p>
+        <p id="demo2" style="color:brown"></p>
+        <p id="demo3" style="color:aquamarine"></p>
+        </form>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>FOR EACH</h1>
+    <p id="u1"></p>
+    <script>
+        let students=["umesh","sejal","prince"];
+        students.forEach(pru);
+        function pru(item,index,arr){
+            arr[index]='hello'+item+"<br>";
+        }
+        document.getElementById("u1").innerHTML=students;
+    </script>
+</body>
+</html>

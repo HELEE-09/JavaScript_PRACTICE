@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>javascript classes</h1>
+    <p>student info</p>
+    <script>
+        class student{
+            getdata(x,y){
+                this.no=x;
+                this.name=y;
+            }
+            display(){
+                document.writeln("no="+this.no);
+                document.writeln("name="+this.name);
+            }
+        }
+        const obj=new student();
+        obj.getdata(1,"umesh");
+        obj.display();
+    </script>
+</body>
+</html>

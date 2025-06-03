@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function pru(){
+            var x=document.getElementById("myvalue").value
+            if(parseInt(x)>18)
+            {
+                document.write("eligible to vote");
+                if(parseInt(x)>21){
+                    document.write("and marry");
+
+                }
+            }
+            else{
+                document.write("minor");
+            }
+        }
+    </script>
+</head>
+<body>
+
+    
+
+<form method="post" onsubmit="pru()" id="myform" action="">
+    <input type="name" name="x" id="myvalue">
+    <input type="submit" name="submit" value="submit">
+    
+</form>
+</body>
+</html>

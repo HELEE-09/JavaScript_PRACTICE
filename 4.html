@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function pru()
+        {
+            var n1=parseInt(document.getElementById("n1").value);
+            var n2=parseInt(document.getElementById("n2").value);
+            if(n1>n2)
+            {
+                document.getElementById("demo").innerHTML="n1 is greater";
+
+            }
+            else(n2>n1)
+            {
+                document.getElementById("demo").innerHTML="n2 is greater";
+            }
+        }
+
+    </script>
+</head>
+<body bgcolor="grey">
+    
+        <form method="post" action="" onsubmit="pru(); return false;">
+            <p>NTER THE VALUE</p>
+        
+      <p><input type="text" name="n1" id="n1"></p>
+      <p><input type="text" name="n2" id="n2"></p>
+      <input type="submit" name="submit" value="submit">
+      <p id="demo"></p>
+
+
+
+        
+    
+    </form>   
+</body>
+</html>

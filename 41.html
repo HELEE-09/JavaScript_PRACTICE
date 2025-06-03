@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>string function</h2>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <script>
+        var txt="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        document.getElementById("demo").innerHTML=txt.length;
+        var str="MY CLASS NAME URO COMPUTER";
+        var pos=str.indexOf("URO");
+        document.getElementById("demo1").innerHTML=pos;
+        var str1="URO COMPUTER";
+        var res1=str1.slice(4,12);
+        document.getElementById("demo2").innerHTML=res1;
+        var str2="URO COMPUTER";
+        var rest2=str1.substring(4,12);
+        document.getElementById("demo3").innerHTML=res2;
+
+        </script>
+</body>
+</html>

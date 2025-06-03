@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function checkNumber(x){
+            if(typeof x=='number'&& !isNaN(x)){
+                if(Number.isInteger(x)){
+                    document.writeln(x+"is integer");
+                }
+                else{
+                    document.writeln(x+"is float value");
+                }
+            }else{
+                document.writeln(x+"is not a number");
+            }
+        }
+        checkNumber('hello');
+        checkNumber(44);
+    
+        checkNumber(3.4);
+        checkNumber(-3.4);
+
+        checkNumber(NaN);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

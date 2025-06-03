@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function pru()
+        {
+            alert("hi")
+            var x =parseInt( document.getElementById("n1").value);
+            if(x%2==0)
+            {
+                    document.getElementById("demo").innerHTML="Value is Even";
+            }
+            else{
+                document.getElementById("demo").innerHTML="Value is     Odd";
+
+            }
+        }
+    </script>
+</head>
+<body bgcolor="purple">
+    <form method="post" action="" onsubmit="pru(); return false;">
+        <p>ENTER A VALUE</p>
+        <input type="text" name="n1" id="n1">
+        <p></p>
+        <input type="submit" name="submit" value="submit">
+        <p id="demo"></p>
+</form>
+    
+</body>
+</html>

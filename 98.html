@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class and function</title>
+</head>
+<body>
+    <p id="test"></p>
+    <button onclick="pru()">press</button>
+    <script>
+        class test{
+            static x=0;
+            static pru(){
+                this.x=this.x+1;
+                return this.x;
+            }
+        }
+        function pru(){
+            let g=parseInt(test.pru())
+            {
+                if(g>5){
+                    document.writeln("out of range")
+                }
+                else{}
+                document.getElementById("test").innerHTML=g;
+            }
+        }
+    </script>
+    
+</body>
+</html>

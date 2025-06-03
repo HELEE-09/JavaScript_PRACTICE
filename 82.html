@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>passing value from one page to another</title>
+</head>
+<body>
+    <form method="post" action="" onsubmit="pru(); return false;">
+    <p>enter your value here</p>
+    <input type="text" name="n1" id="myvalue">
+    <input type="submit" name="submit" value="submit">
+    </form>
+    <script>
+        function pru(){
+            var a=document.getElementById("myvalue").value;
+            localStorage.setItem("var1",a);
+            window.location.href="81.html";
+        }
+    </script>
+    
+</body>
+</html>

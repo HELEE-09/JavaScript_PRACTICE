@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if else</title>
+</head>
+<body>
+    <form method="post" action="" onsubmit="pru(); return false;">
+        <p>enter your salary</p>
+        <p><input type="number" name="salary" id="salary"></p>
+        <p></p>
+        <p><input type="submit" name="submit" id="submit"></p>
+        <p></p>
+        <p><input typr="number" name="pf" id="pf"></p>
+    </form>
+    <script>
+        function pru(){
+            var sal=parseFloat(document.getElementById("salary").value);
+            var pf=0;
+            if(sal>1000){
+                pf=(sal*10)/100;
+            }
+            else{
+                pf=(sal*5)/100;
+            }
+            document.getElementById("pf").value=pf;
+        }
+    </script>
+    
+</body>
+</html>

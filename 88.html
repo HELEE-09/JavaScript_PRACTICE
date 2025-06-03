@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>the onmousedown event</h2>
+    <p>click the text below</p>
+    <p id="uro" onmousedown="mouseDown()" onmouseup="mouseUp()">
+        the mouseDown() function sets the color of this text to red.
+        the mouseUp() function sets the color of this text to blue.</p>
+        <script>
+            function mouseDown(){
+                document.getElementById("uro").style.color="red";
+            }
+            function mouseUp(){
+                document.getElementById("uro").style.color="blue";
+
+            }
+            </script>
+</body>
+</html>

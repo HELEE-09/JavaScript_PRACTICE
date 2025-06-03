@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timer</title>
+</head>
+<body onload="pru()">
+    <h2>create timer</h2>
+    <p id="test"></p>
+    <script>
+        function pru(){
+            const dt=new Date();
+            let h=dt.getHours();
+            let m=dt.getMinutes();
+            let s=dt.getSeconds();
+            document.getElementById('test').innerHTML=h+":"+m+":"+s;
+            setTimeout(pru,1000);
+
+        }
+        </script>
+    
+</body>
+</html>

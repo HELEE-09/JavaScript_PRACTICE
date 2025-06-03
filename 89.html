@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>the onmouseenter event</h2>
+    <img onmouseenter="FunBigImage(this)" onmouseleave="FunNormalImage(this)" border="0" src="C:\\Users\\helee\\OneDrive\\Desktop\\dwd.images\\cccc1.jpg"
+    alt="coffee" width="32" height="32">
+    <p>the function FunBigImage() is triggered when the user moves the mouser pointer onto the imsge.</p>
+    <p>the function FunNormalImage() is triggered when the mouse pointer is moved out of the image.</p>
+    <script>
+        function FunBigImage(x){
+            x.style.height="64px";
+            x.style.width="64px";
+        }
+        function FunNormalImage(x){
+            x.style.height="32px";
+            x.style.width="32px";
+        }
+    </script>
+</body>
+</html>
