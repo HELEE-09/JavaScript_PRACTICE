@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function pru(){
+
+            var n1=document.getElementById("n1").value;
+            var n2=document.getElementById("n2").value;
+            
+            window.location.href="1.html";
+
+            if(n1==n2)
+            {
+              
+              localStorage.setItem("var1",n1);
+               
+               
+            
+              alert(n2);
+            }
+        }
+            
+        
+        
+    </script>
+</head>
+<body>
+    <form method="post" action="" onsubmit="pru()">
+    <p>USER<input type="text" name="n1" id="n1" value="uro"></p>
+    <p>password<input type="text" name="n2" id="n2" value="uro"></p>
+    <p><input type="submit" name="submit" value="result"></p>
+    <p id="demo"></p>
+    </form>
+</body>
+</html>

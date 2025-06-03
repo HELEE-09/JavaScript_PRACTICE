@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style type="text/css">
+    body{
+        background: url("C:\\Users\\helee\\OneDrive\\Desktop\\dwd.images\\cc7.jpg")no-repeat fixed;
+        background-size: cover;
+        box-sizing: border-box;
+        display: flex;
+        height: 100vh;
+        width: 100vw;
+        align-items: center;
+        flex-direction: column;
+    }
+    h1{
+        font-size: 60px;
+        color:aliceblue;
+        text-align: center;
+    }
+    .yesclass,
+    .noclass {
+        height: 60px;
+        width: 100px;
+        border: 1px solid black;
+        border-radius: 30px;
+        font-size: 30px;}
+
+
+    
+</style>
+<body>
+    <h1>DO U LOVE HELEE OR NOT!!</h1>
+    <div class="btn">
+        <button type="button" class="yesclass" onclick="pru()">yes</button>
+        <button type="button" class="noclass">no</button>
+    </div>
+    <script type="text/javascript">
+        var yes=document.querySelector(".yesclass");
+        function pru(){
+            alert("YEA YEA OFC,I KNOW YOU DO JUST SHY ENOUGH TO SHOW IT MORE OFTEN BUT I DONT MIND I LOVE YOU EVEN MORE EVERY SEC AS OFC UK<3");
+        }
+        const no=document.querySelector(".noclass");
+        no.addEventListener("mouseover", ()=>{ move();});
+        function move(){
+            let i=Math.floor(Math.random()*window.innerWidth)+1;
+            let j=Math.floor(Math.random()*window.innerHeight)+1;
+            no.style.position="absolute";
+            no.style.right=i+"px";
+            no.style.left=j+"px";
+        }
+
+    </script>
+    
+</body>
+</html>

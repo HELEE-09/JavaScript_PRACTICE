@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Second Page (page2.html) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 2</title>
+</head>
+<body>
+    <table id="table2" BORDER="2">
+        <thead>
+            <tr>
+                <th>1Name</th>
+                <th>2name</th>
+                <th>3name</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script>
+        // Retrieve data from local storage
+        var tableData = JSON.parse(localStorage.getItem('tableData'));
+
+        // Display data in table 2
+        var table2Body = document.querySelector('#table2 tbody');
+        tableData.forEach(function(rowData) {
+            var row = document.createElement('tr');
+            rowData.forEach(function(cellData) {
+                var cell = document.createElement('td');
+                cell.textContent = cellData;
+                row.appendChild(cell);
+            });
+            table2Body.appendChild(row);
+        });
+    </script>
+</body>
+</html>
+</body>
+</html>

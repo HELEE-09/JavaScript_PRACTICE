@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h1>link</h1>
+    <p id="demo"></p>
+    
+</head>
+<body>
+  <!-- First Page (page1.html) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 1</title>
+</head>
+<body>
+    <table id="table1">
+        <thead>
+            <tr>
+                <th>1Name</th>
+                <th>2name</th>
+                <th>3name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>HELEE</td>
+                <td>ASIT</td>
+                <td>RAO</td>
+                </tr>
+            </tr>
+            
+        </tbody>
+    </table>
+    <button onclick="transferData()">Transfer Data</button>
+
+    <script>
+        function transferData() {
+            // Get data from table 1
+            var table1Data = [];
+            var tableRows = document.querySelectorAll('#table1 tbody tr');
+            tableRows.forEach(function(row) {
+                var rowData = [];
+                row.querySelectorAll('td').forEach(function(cell) {
+                    rowData.push(cell.textContent);
+                });
+                table1Data.push(rowData);
+            });
+
+            // Store data in local storage
+            localStorage.setItem('tableData', JSON.stringify(table1Data));
+
+            // Navigate to page 2
+            window.location.href = '102.html';
+        }
+    </script>
+</body>
+</html>
+    
+</body>
+</html>
